@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: nodelet_hello_world
+Description: Description of nodelet_hello_world
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lyolo_processor_wrapper
+Requires: roscpp rospy std_msgs cv_bridge nodelet pluginlib sensor_msgs image_transport

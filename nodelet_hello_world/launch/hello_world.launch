@@ -1,0 +1,19 @@
+<launch>
+  <!-- USB camera node -->
+  <node pkg="usb_cam" type="usb_cam_node" name="usb_cam" output="screen">
+    <param name="video_device" value="/dev/video0"/>
+    <param name="image_width" value="640"/>
+    <param name="image_height" value="480"/>
+    <param name="pixel_format" value="mjpeg"/>
+    <param name="camera_frame_id" value="camera"/>
+  </node>
+
+  <!-- Nodelet manager -->
+  <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" output="screen" />
+
+  <!-- Hello world nodelet -->
+  <node pkg="nodelet" type="nodelet" name="camera_nodelet" args="load nodelet_hello_world/Hello nodelet_manager" output="screen">
+    <remap from="image_in" to="/usb_cam/image_raw" />
+    <remap from="image_out" to="/image_stream" />
+  </node>
+</launch>

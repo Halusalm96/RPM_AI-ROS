@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="nodelet_hello_world" type="yolo_processor2.py" name="yolo_processor" output="screen"/>
+</launch>
+<!-- <launch>
+  <node pkg="nodelet_hello_world" type="yolo_processor.py" name="yolo_processor" output="screen"/>
+</launch> -->

@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="nodelet_hello_world" type="yolo_processor3.py" name="yolo_processor" output="screen"/>
+</launch>

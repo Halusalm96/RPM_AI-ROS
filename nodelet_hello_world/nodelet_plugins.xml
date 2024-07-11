@@ -1,0 +1,7 @@
+<library path="lib/libyolo_processor_wrapper">
+  <class name="nodelet_hello_world/YOLOProcessorNodelet"
+         type="nodelet_hello_world::YOLOProcessorWrapper"
+         base_class_type="nodelet::Nodelet">
+    <description>YOLO Processor Nodelet Wrapper</description>
+  </class>
+</library>

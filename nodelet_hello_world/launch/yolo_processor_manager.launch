@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="yolo_processor_manager" args="manager" output="screen"/>
+  <node pkg="nodelet" type="nodelet" name="yolo_processor" args="load nodelet_hello_world/YOLOProcessorNodelet yolo_processor_manager" output="screen"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="nodelet_hello_world" type="yolo_time_measure.py" name="yolo_processor" output="screen"/>
+</launch>
